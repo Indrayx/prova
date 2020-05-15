@@ -57,6 +57,8 @@ public class main {
 		scoretotal = scorecompras + scoreatraso + pay;
 		
 		System.out.println("Score de volume de compras = " + totalcompras + " pontos");
+		System.out.println("Score de inadimplência = " + atraso + " pontos");
+		System.out.println("Score de forma de pagamento = " + pay);
 		
 		
 		
