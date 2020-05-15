@@ -36,6 +36,25 @@ public class main {
 		else if(totalcompras > 3000 ) {scorecompras = 60;}
 		
 		System.out.printf("%n%n");
+		System.out.println("Quantas vezes o cliente  atrasou o pagamento?");
+		atraso = sc.nextInt();
+		
+		if (atraso == 0) { scoreatraso = 30;}
+		else if (atraso == 1) { scoreatraso = 15;}
+		else if (atraso > 1) { scoreatraso = 0;}
+		
+					
+		System.out.println("A maioria das compras foi em dinheiro, cartão ou boleto (D/C/B)");
+		pagamento = (sc.next().charAt(0));
+		
+		
+		if (pagamento == 'd') { pay = 5;}
+		else if (pagamento == 'c' || pagamento == 'b')  { pay = 10;}
+		
+		
+		
+		
+		scoretotal = scorecompras + scoreatraso + pay;
 		
 		
 		
