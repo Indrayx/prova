@@ -20,6 +20,22 @@ public class main {
 		System.out.println("-----------------------------");
 		System.out.println("INFORME OS DADOS DO ULTIMO ANO");
 		
+		System.out.println("Quantas compras o cliente fez no ultimo ano?");
+		compras = sc.nextInt();
+		System.out.println("Qual o ticket medio?");
+			
+		ticket = sc.nextDouble();
+		
+		 
+		totalcompras = ticket * compras;
+		
+		
+		if (compras == 0) { scorecompras = 0;}	
+		else if(totalcompras > 0 && totalcompras <= 3000 && compras < 2) {scorecompras = 20;}
+		else if (totalcompras > 0 && totalcompras <= 3000 && compras >= 2) { scorecompras = 40;}
+		else if(totalcompras > 3000 ) {scorecompras = 60;}
+		
+		System.out.printf("%n%n");
 		
 		
 		
