@@ -60,7 +60,15 @@ public class main {
 		System.out.println("Score de inadimplência = " + atraso + " pontos");
 		System.out.println("Score de forma de pagamento = " + pay);
 		
-		
+		if(scoretotal > 0 && scoretotal <= 25 ) { 
+			System.out.println("CLIENTE BRONZE");
+		}
+		else if (scoretotal > 25 && scoretotal <= 75 ) {
+			System.out.println("CLIENTE PRATA");
+			}
+		else if (scoretotal > 75) {
+			System.out.println("CLIENTE OURO");
+		}
 		
 		
 		
